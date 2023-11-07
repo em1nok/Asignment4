@@ -1,0 +1,368 @@
+/* Beige color variables */
+:root {
+    --beige: #F5DEB3;
+    --brown: #8B4513;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--beige);
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container-fluid {
+    padding: 0; /* Remove padding from the container-fluid */
+}
+
+.navbar-toggler-icon {
+    background-color: var(--brown);
+}
+
+/* Make navigation links appear in a single row */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Body */
+body {
+    background-color: #FFF5E1;
+}
+
+/* Content Sections */
+.section {
+    background-color: #FAF3E0;
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--beige);
+    color: var(--brown);
+}
+
+/* Change text color to a contrasting color for better readability */
+body, p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #3d210b; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+    font-family: "Times New Roman", Times, serif;
+}
+
+a:hover {
+    color: #3d210b; /* Darker blue on hover */
+}
+
+/* Optional: Add padding and margin to improve spacing */
+.nav-link {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    line-height: 1.2;
+    
+}
+.container {
+    display: flex;
+    align-items: center; /* Центрирование вертикально */
+}
+
+.left-sidebar {
+    width: 20%;
+    background-color:#F5DEB3;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+a.georgia {
+    font-family: "Times New Roman", Times, serif;
+}
+.contact-me {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F5DEB3; /* Цвет фона раздела */
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-me h2 {
+    font-size: 24px; /* Размер шрифта заголовка "Contact Me" */
+}
+
+.contact-me p {
+    font-size: 16px; /* Размер шрифта текста в разделе */
+}
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B4513;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 250px; /* Задайте фиксированную ширину */
+    height: 200px; /* Задайте фиксированную высоту */
+    margin-right: 1cm; /* Добавьте расстояние в 2 см между изображениями */
+    
+}
+
+/* Уберем лишний отступ справа у последнего изображения */
+.image-container img:last-child {
+    margin-right: 0;
+}
+.about {
+    padding: 20px;
+}
+
+.about a {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.slideshow-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+}
+
+.slide p {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #F5DEB3;
+    background-color: #8B4513; /* Фон для надписей под фото */
+}
+#prev,
+#next {
+    margin-top: 10px;
+    background-color: #b99e6c; /* Фон для кнопок Previous и Next */
+    color: #8B4513;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#prev:hover,
+#next:hover {
+    background-color: #FFF5E1;
+}
+
+/* Ваши существующие стили */
+
+/* Ваши существующие стили */
+
+.audio-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; /* Отступ от предыдущего контента */
+}
+
+audio {
+    width: 100%; /* Заполняем всю доступную ширину контейнера */
+    max-width: 400px; /* Устанавливаем максимальную ширину */
+    display: block;
+    margin: 0 auto; /* Центрируем по горизонтали */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+audio:focus {
+    outline: none; /* Убираем контур фокуса при активации элемента */
+}
+
+.animation-container {
+    text-align: center;
+    background-color: #f0f0f0; /* Фон для контейнера анимации */
+    padding: 20px;
+    margin-top: 20px; /* Отступ перед анимацией */
+}
+
+.animated-image {
+    opacity: 0; /* Устанавливаем начальную непрозрачность */
+    animation: fade-in 2s ease-in-out infinite; /* Анимация для изображения */
+}
+
+/* Дополнительные стили по вашему желанию */
+
+
+.animation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8B4513; /* Фон для анимации */
+    padding: 20px;
+    margin-top: 20px; /* Отступ от предыдущего контента */
+}
+
+.animated-image {
+    opacity: 0; /* Устанавливаем начальную непрозрачность */
+    animation: fade-in 2s ease-in-out infinite; /* Название анимации, продолжительность, функция распределения времени и бесконечное повторение */
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0; /* Начальная непрозрачность (невидимо) */
+    }
+    100% {
+        opacity: 1; /* Полная непрозрачность (видимо) */
+    }
+}
+/* Общие стили для всей страницы */
+
+
+.container-contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Стили для контактной информации */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Стили для контактной формы */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #8B4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #8B4513;
+}
+/* Ваши существующие стили */
+
+.animation-container-contact {
+    text-align: center;
+    background-color: #8B4513;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.animated-text {
+    font-size: 36px;
+    color: #f9f9f9;
+    opacity: 0;
+    animation: slide-in 2s ease-in-out infinite;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
